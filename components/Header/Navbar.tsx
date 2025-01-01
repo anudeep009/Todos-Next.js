@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import Loginbtn from '../auth/Loginbtn'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:block">
-            <Loginbtn />
+            
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="pt-4 pb-3 border-t border-gray-700">
             <div className="flex items-center px-5">
-              <Loginbtn />
+            
             </div>
           </div>
         </div>

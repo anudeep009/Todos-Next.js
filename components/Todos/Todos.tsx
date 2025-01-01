@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/table"
 import { Checkbox } from "../ui/checkbox"
 import AddTodo from "./AddTodo"
-import { todo } from "node:test"
+import { Toaster } from "sonner"
 
 const todos = [
   {
@@ -19,25 +19,25 @@ const todos = [
     isDone : false
   },
   {
-    id : 1,
+    id : 2,
     todo: "Buy groceries",
     status: "Pending",
     isDone : false
   },
   {
-    id : 1,
+    id : 3,
     todo: "Buy groceries",
     status: "Pending",
     isDone : false
   },
   {
-    id : 1,
+    id : 4,
     todo: "Buy groceries",
     status: "Pending",
     isDone : false
   },
   {
-    id : 1,
+    id : 5,
     todo: "Buy groceries",
     status: "Pending",
     isDone : false
@@ -71,6 +71,7 @@ export function Todos() {
       </TableBody>
     </Table>
     </div>
+    <Toaster />
     </div>
   )
 }
