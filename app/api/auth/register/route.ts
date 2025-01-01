@@ -14,6 +14,7 @@ export async function POST(request: Request) {
     const response = await User.create({ email, password: hashedPassword });
     
   } catch (e) {
+    console.log("Errro while creating user");
     console.log({ e });
   }
 
